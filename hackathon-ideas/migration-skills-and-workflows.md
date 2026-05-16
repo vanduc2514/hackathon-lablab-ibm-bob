@@ -109,6 +109,120 @@ Activate this skill when:
    - Document rollback procedures
    - Identify rollback triggers
 
+**Phase 2.5: Design (Use Migration Design Mode)**
+
+8.5. **Gather Design Context**
+   - Review assessment report and migration plan
+   - Understand current architecture using `list_files` and `list_code_definition_names`
+   - Clarify target platform requirements
+   - Identify any missing information
+
+8.6. **Design Target Architecture**
+   - Use Architecture Visualization MCP to create architecture diagrams
+   - Map current components to target architecture
+   - Define component boundaries and responsibilities
+   - Identify architectural patterns to apply
+   - Document key design decisions
+
+8.7. **Define Component Migration Strategies**
+   - Apply 7Rs framework per component:
+     - **Rehost:** Lift-and-shift with minimal changes
+     - **Replatform:** Optimize for target platform
+     - **Refactor:** Restructure for cloud-native patterns
+     - **Repurchase:** Replace with SaaS/managed service
+     - **Retire:** Decommission if no longer needed
+     - **Retain:** Keep as-is if not ready to migrate
+     - **Relocate:** Move to different infrastructure
+   - Document migration approach per component
+   - Identify dependencies and migration sequence
+   - Define rollback strategies per component
+
+8.8. **Design APIs and Interfaces**
+   - Specify API contracts (OpenAPI/Swagger format)
+   - Design interface compatibility layers if needed
+   - Document breaking changes
+   - Define versioning strategy
+   - Plan backward compatibility approach
+
+8.9. **Create Data Migration Schema**
+   - Design target data models
+   - Map source schema to target schema
+   - Define transformation rules
+   - Plan data validation approach
+   - Specify migration sequence (batch vs incremental)
+
+8.10. **Define Integration Patterns**
+    - Design integration architecture
+    - Specify communication patterns (REST, messaging, etc.)
+    - Define error handling and retry logic
+    - Document security and authentication flows
+    - Plan monitoring and observability
+
+8.11. **Design Testing Strategy**
+    - Define test levels (unit, integration, e2e)
+    - Specify coverage requirements (≥80% recommended)
+    - Design test data strategy
+    - Plan performance testing approach
+    - Plan security testing approach
+
+8.12. **Create PoC Recommendations**
+    - Identify high-risk areas needing validation
+    - Define PoC scope and objectives
+    - Estimate timeline and resources
+    - Specify success criteria
+
+8.13. **Generate Design Documentation**
+    - Use Documentation Generator MCP to create Confluence pages:
+      - Architecture Design Document
+      - Component Technical Specifications
+      - Design Review Checklist
+      - PoC Recommendations
+    - Generate architecture diagrams
+    - Document design decisions log
+
+8.14. **Validate Design**
+    - Review against phase gate criteria (see below)
+    - Complete design review checklist
+    - Obtain stakeholder approvals
+    - Create handoff package for Execution Mode
+
+**Phase Gate: Design → Execution**
+
+Before transitioning to Execution Mode, validate:
+
+**Design Completeness:**
+- [ ] Architecture design document created
+- [ ] All components have migration strategies defined
+- [ ] API specifications documented
+- [ ] Data migration schema designed
+- [ ] Integration patterns specified
+- [ ] Testing strategy defined
+
+**Design Quality:**
+- [ ] Architecture aligns with target platform best practices
+- [ ] All integration points addressed
+- [ ] Performance requirements achievable
+- [ ] Security requirements met
+- [ ] Data migration approach validated
+- [ ] Rollback strategy feasible
+- [ ] Testing strategy comprehensive
+
+**Stakeholder Approval:**
+- [ ] Design review completed
+- [ ] Architecture approved by technical lead
+- [ ] Security review passed (if required)
+- [ ] Compliance requirements validated (if required)
+
+**Handoff Package Ready:**
+- [ ] Design documents published to Confluence
+- [ ] Component specifications available
+- [ ] Design review checklist completed
+- [ ] PoC recommendations documented (if applicable)
+- [ ] Execution Mode can proceed with clear guidance
+
+**If any criteria are not met, DO NOT transition to Execution Mode.**
+**Work with stakeholders to address gaps before proceeding.**
+
 **Phase 3: Execution (Use Migration Execution Mode)**
 
 9. **Update Build Configuration**
