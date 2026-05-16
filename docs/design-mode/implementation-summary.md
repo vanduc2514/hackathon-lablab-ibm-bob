@@ -97,8 +97,8 @@ Phase 1: Assessment → Phase 2: Planning → Phase 3: DESIGN → Phase 4: Execu
 | [specification.md](specification.md) | 850 | Complete YAML configuration |
 | [verification.md](verification.md) | 380 | Verification strategy |
 | [testing-guide.md](testing-guide.md) | 420 | Testing procedures |
-| [bug-report.md](bug-report.md) | 449 | Bug analysis and resolution |
-| [demo-summary.md](demo-summary.md) | 687 | Demo validation |
+| [BUG-REPORT-DESIGN-MODE.md](../../BUG-REPORT-DESIGN-MODE.md) | 449 | Bug analysis and resolution |
+| [DESIGN-MODE-DEMO-SUMMARY.md](../../DESIGN-MODE-DEMO-SUMMARY.md) | 687 | Demo validation |
 | [implementation-summary.md](implementation-summary.md) | 698 | This document |
 | **Total** | **3,934** | **Complete documentation** |
 
@@ -193,7 +193,7 @@ groups:
 ✅ **Test Passed:** Successfully read [`pom.xml`](../../sample-java-migration-test/pom.xml) file  
 ✅ **Status:** Bug resolved, mode fully functional
 
-**Details:** See [bug-report.md](bug-report.md)
+**Details:** See [../../BUG-REPORT-DESIGN-MODE.md](../../BUG-REPORT-DESIGN-MODE.md)
 
 ---
 
@@ -407,7 +407,7 @@ Criteria:
 
 **Overall Status:** ✅ **ALL CRITERIA MET**
 
-**Details:** See [demo-summary.md](demo-summary.md)
+**Details:** See [../../DESIGN-MODE-DEMO-SUMMARY.md](../../DESIGN-MODE-DEMO-SUMMARY.md)
 
 ---
 

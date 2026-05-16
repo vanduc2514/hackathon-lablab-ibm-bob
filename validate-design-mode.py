@@ -74,7 +74,8 @@ class ValidationResult:
         return self.failed == 0
 
 # Base path for the project
-BASE_PATH = Path("Products/hackathon-lablab-ibm-bob")
+SCRIPT_DIR = Path(__file__).resolve().parent
+BASE_PATH = SCRIPT_DIR if (SCRIPT_DIR / ".bob" / "custom_modes.yaml").exists() else Path("Products/hackathon-lablab-ibm-bob")
 
 def validate_yaml_config() -> ValidationResult:
     """Validate YAML configuration file"""

@@ -91,7 +91,7 @@ This directory contains all documentation related to Migration Design Mode imple
 
 - **Demo Summary:** [../../DESIGN-MODE-DEMO-SUMMARY.md](../../DESIGN-MODE-DEMO-SUMMARY.md)
 - **Sample Project:** [../../../sample-java-migration-test/](../../../sample-java-migration-test/)
-- **Architecture Design:** [../../../sample-java-migration-test/MIGRATION-ARCHITECTURE-DESIGN.md](../../../sample-java-migration-test/MIGRATION-ARCHITECTURE-DESIGN.md)
+- **Architecture Design:** Not included in this repository; see [../../DESIGN-MODE-DEMO-SUMMARY.md](../../DESIGN-MODE-DEMO-SUMMARY.md)
 
 ---
 
