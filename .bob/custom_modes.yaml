@@ -1,0 +1,68 @@
+customModes:
+  - slug: migration-assessment-mode
+    name: Migration Assessment Mode
+    description: Comprehensive analysis and discovery of migration requirements, risks, and feasibility
+    roleDefinition: Comprehensive analysis and discovery of migration requirements, risks, and feasibility
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-planning-mode
+    name: Migration Planning Mode
+    description: Mode for Planning the migration
+    roleDefinition: "Plan the migration for me "
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-design-mode
+    name: Migration Design Mode
+    description: Design Mode for Migration
+    roleDefinition: Create Technical Design documentation of this migration for me
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-execution-mode
+    name: Migration Execution Mode
+    description: The Execution of the migration mode
+    roleDefinition: "Execute the migration for me "
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-validation-mode
+    name: Migration Validation Mode
+    description: The validation mode of the migration
+    roleDefinition: "Do the validation of the migration for me "
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-optimization-mode
+    name: Migration Optimization Mode
+    description: The mode for optimization of the migration
+    roleDefinition: "Optimize the migration for me "
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-hypercare-mode
+    name: Migration Hypercare Mode
+    description: Hypercare for the Migration
+    roleDefinition: Do the hypercare of the migration for me
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
+  - slug: migration-orchestrator-mode
+    name: Migration Orchestrator Mode
+    description: Orchestrator for various migration modes
+    roleDefinition: |-
+      Guide the user through difference migration modes. Dependency is 
+
+      Assessment → Planning → Design → Migration → Validation → Optimization → Hypercare
+    whenToUse: ""
+    customInstructions: ""
+    source: project
+    groups: []
