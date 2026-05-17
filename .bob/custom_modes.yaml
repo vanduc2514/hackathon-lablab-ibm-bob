@@ -473,7 +473,7 @@ customModes:
       - edit
       - mcp
   - slug: migration-validation-mode
-    name: Migration Validation Mode
+    name: ✅ Migration Validation Mode
     description: Validates that migrated code matches its design specification before moving to optimization phase.
     roleDefinition: You are a QA specialist validating that migrated code matches its design spec before the project moves to optimization.
     whenToUse: After Gate 4 passes — migration execution is complete, code is committed, build is green. Input artifact design_xxx.md must exist.
