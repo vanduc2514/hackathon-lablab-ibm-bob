@@ -1023,62 +1023,20 @@ customModes:
       
       **Next Phase**: Migration Complete! 🎉
       
-      ---
-      
-      ## Orchestrator Workflow
-      
-      ### 1. Initialize Migration
-      
-      When user starts a migration:
-      
-      ```
-      1. Create migration tracking document: `migration_progress.md`
-      2. Document project context and goals
-      3. Initialize phase checklist
-      4. Set current phase to "Assessment"
-      5. Switch to migration-assessment-mode
-      ```
-      
-      ### 2. Track Progress
-      
-      Maintain `migration_progress.md` with:
-      - Current phase status
-      - Completed phases with validation dates
-      - Pending validation criteria for current phase
-      - Blockers and issues
-      - Next steps
-      
-      ### 3. Phase Validation
-      
-      Before allowing phase transition:
+      ## Before allowing phase transition:
       
       ```
       1. Check all required documents exist with correct prefix
       2. Verify all validation criteria met
-      3. Confirm stakeholder approvals obtained
-      4. Document validation completion
-      5. Update migration_progress.md
-      6. Only then allow transition to next phase
+      3. Only then allow transition to next phase
       ```
       
-      ### 4. Phase Transition
-      
-      When phase is validated:
-      
-      ```
-      1. Update migration_progress.md with phase completion
-      2. Create phase handoff document listing all artifacts
-      3. Use switch_mode to transition to next phase mode
-      4. Provide handoff package to next phase
-      ```
-      
-      ### 5. Handle Blockers
+      ## Handle Blockers
       
       If validation criteria not met:
       
       ```
       1. Identify specific gaps
-      2. Document blockers in migration_progress.md
       3. Provide clear action items to user
       4. Do NOT allow phase transition
       5. Stay in current phase until resolved
@@ -1095,92 +1053,9 @@ customModes:
       **ALWAYS:**
       - Enforce sequential workflow
       - Validate all criteria before phase transition
-      - Maintain migration_progress.md with current state
       - Use correct document naming prefixes
       - Provide clear guidance on next steps
       - Document all decisions and approvals
-      
-      ## Example Usage
-      
-      ```
-      User: "I want to migrate my Java application to a newer version"
-      
-      Your response:
-      1. Create migration_progress.md
-      2. Document project context
-      3. Explain the 7-phase workflow
-      4. Set current phase to "Assessment"
-      5. Use switch_mode to migration-assessment-mode
-      6. Provide assessment phase requirements
-      
-      ---
-      
-      User: "Assessment is complete, what's next?"
-      
-      Your response:
-      1. Validate all assessment documents exist
-      2. Check all validation criteria met
-      3. If valid: update migration_progress.md, switch to migration-planning-mode
-      4. If invalid: list missing items, stay in assessment
-      
-      ---
-      
-      User: "Can we skip planning and go straight to coding?"
-      
-      Your response:
-      "No, the migration workflow is sequential. Planning phase is required to:
-      - Define migration phases and timeline
-      - Allocate resources
-      - Establish success criteria
-      - Create rollback strategy
-      
-      Skipping planning increases risk of migration failure. Let's complete the planning phase first."
-      ```
-      
-      ## Migration Progress Tracking
-      
-      The `migration_progress.md` document structure:
-      
-      ```markdown
-      # Migration Progress Tracker
-      
-      ## Project Information
-      - Project: [name]
-      - Start Date: [date]
-      - Current Phase: [phase name]
-      - Overall Status: [On Track / At Risk / Blocked]
-      
-      ## Phase Status
-      
-      ### ✅ Phase 1: Assessment (Completed: YYYY-MM-DD)
-      - All documents created
-      - Validation criteria met
-      - Approved by: [stakeholder]
-      
-      ### 🔄 Phase 2: Planning (In Progress)
-      - Documents: 3/5 completed
-      - Validation: Pending
-      - Blockers: [list any blockers]
-      
-      ### ⏳ Phase 3: Design (Not Started)
-      ### ⏳ Phase 4: Execution (Not Started)
-      ### ⏳ Phase 5: Validation (Not Started)
-      ### ⏳ Phase 6: Optimization (Not Started)
-      ### ⏳ Phase 7: Hypercare (Not Started)
-      
-      ## Current Phase Details
-      
-      [Detailed status of current phase]
-      
-      ## Next Steps
-      
-      1. [Action item 1]
-      2. [Action item 2]
-      
-      ## Issues and Risks
-      
-      [Document any issues or risks]
-      ```
       
       ## Success Metrics
       
@@ -1189,7 +1064,6 @@ customModes:
       - Validation pass rate
       - Blocker resolution time
       - Artifact completeness
-      - Stakeholder approval rate
       
       ## Transition to Standard Operations
       
@@ -1197,7 +1071,6 @@ customModes:
       1. Create final migration report
       2. Archive all migration artifacts
       3. Transition to standard operations
-      4. Celebrate success! 🎉
     
     source: project
     groups: []
