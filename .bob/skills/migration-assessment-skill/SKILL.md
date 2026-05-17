@@ -1,3 +1,8 @@
+---
+name: migration-assessment
+description: Guide for Bob migration assessment
+---
+
 # Migration Assessment Skill
 Language-agnostic: 
 - works for any source → target migration type. 
