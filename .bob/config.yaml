@@ -1,0 +1,39 @@
+# IBM Bob Migration Framework — Global Configuration
+# Single source of truth for all phase thresholds and settings.
+# All modes and skills read from this file. Edit here, nowhere else.
+
+migration:
+  readiness_threshold: 60
+  performance_variance_threshold_pct: 10
+  unit_test_pass_rate_pct: 100
+  integration_test_pass_rate_pct: 95
+  code_coverage_pct: 80
+  hypercare_stability_days: 30
+  hypercare_uptime_target_pct: 99.9
+
+  output:
+    assessment_report:   "reports/assessment/assessment-report.md"
+    validation_report:   "reports/validation/validation-report.md"
+    optimization_report: "reports/optimization/optimization-report.md"
+    hypercare_report:    "reports/hypercare/hypercare-report.md"
+
+  jira:
+    stub: true
+    stub_output_path: "reports/validation/jira-stub.md"
+    project_key: "MIGR"
+
+  mcp:
+    test_generator:
+      present: false
+      fallback: "native_reasoning"
+    security_scanner:
+      present: false
+      fallback: "pattern_search"
+    performance_profiler:
+      present: false
+      fallback: "skip_execution"
+    data_quality_analyzer:
+      present: false
+      fallback: "native_reasoning"
+
+# Made with Bob
