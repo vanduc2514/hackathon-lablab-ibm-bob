@@ -11,34 +11,21 @@ This project contains specialized skills, MCP (Model Context Protocol) integrati
 ## What This Project Provides
 
 ### Custom Migration Modes
-Seven specialized modes that guide you through each phase of migration:
 
-- **Migration Assessment Mode** - Comprehensive analysis and discovery
-- **Migration Planning Mode** - Strategic planning and roadmap creation
-- **Migration Design Mode** - Technical design documentation
-- **Migration Execution Mode** - Automated migration execution
-- **Migration Validation Mode** - Quality assurance and testing
-- **Migration Optimization Mode** - Performance tuning and best practices
-- **Migration Hypercare Mode** - Post-migration monitoring and support
-- **Migration Orchestrator Mode** - Intelligent phase orchestration
+Eight specialized modes that guide you through each phase of migration:
+
+1. **🔍 Migration Assessment Mode** - Comprehensive analysis and discovery of migration requirements, risks, and feasibility
+2. **📋 Migration Planning Mode** - Strategic planning and roadmap creation for migration execution
+3. **🏗️ Migration Design Mode** - Transform migration plans into technical designs and specifications without executing code changes
+4. **⚙️ Migration Execution Mode** - Automated migration execution and code transformation
+5. **✅ Migration Validation Mode** - Quality assurance, testing, and validation of migrated systems
+6. **⚡ Migration Optimization Mode** - Performance tuning, cost optimization, and efficiency improvements for successfully migrated systems
+7. **🏥 Migration Hypercare Mode** - Post-migration monitoring, support, and continuous improvement
+8. **🎯 Migration Orchestrator Mode** - Intelligent phase orchestration guiding you through: Assessment → Planning → Design → Execution → Validation → Optimization → Hypercare
 
 ### Migration Skills
-Specialized skills for different migration scenarios:
 
-- **Java Migration Skill** - Version upgrades, JVM changes, API updates
-- **Framework Migration Skill** - Framework transitions (e.g., Quarkus → Spring Boot)
-- **Cloud Migration Skill** - Cloud platform migrations and modernization
-- **Database Migration Skill** - Database transitions and data migration
-- **Dependency Management Skill** - Dependency discovery and conflict resolution
-- **Testing Skill** - Automated test generation and execution
-- **Rollback Skill** - Safe rollback procedures and recovery
-
-### MCP Integrations
-High-priority tools for migration automation:
-
-- **Dependency Analysis MCP** - Analyze dependencies, detect conflicts
-- **Test Automation MCP** - Generate and execute comprehensive test suites
-- **Data Quality Assessment MCP** - Validate data integrity and consistency
+A collection of specialized skills that Bob uses throughout the migration lifecycle. These skills are automatically invoked by the appropriate mode to handle specific tasks
 
 ## How Bob Helps with Migrations
 
@@ -46,13 +33,13 @@ Bob leverages the **7Rs Migration Framework** to provide intelligent assistance 
 
 ### 1. **Find the Suitable Migration Strategy**
 Bob analyzes your current state and recommends the optimal approach from the 7Rs framework:
-- Rehost (Lift and Shift)
-- Replatform (Lift, Adaptation, and Shift)
-- Repurchase (Drop and Shop)
-- Refactor/Re-architect (Modernize)
-- Retire (Decommission)
-- Retain (Keep as-is)
-- Relocate (Hypervisor-level migration)
+- **Rehost** (Lift and Shift) - Minimal changes, fastest migration
+- **Replatform** (Lift, Adaptation, and Shift) - Optimize for target platform
+- **Repurchase** (Drop and Shop) - Replace with SaaS or managed service
+- **Refactor/Re-architect** (Modernize) - Restructure for cloud-native patterns
+- **Retire** (Decommission) - Remove unused components
+- **Retain** (Keep as-is) - Defer migration if not ready
+- **Relocate** (Hypervisor-level migration) - Infrastructure-level move
 
 ### 2. **Design and Planning**
 Bob creates comprehensive migration plans including:
@@ -60,7 +47,7 @@ Bob creates comprehensive migration plans including:
 - Risk assessment and mitigation strategies
 - Resource allocation and timeline estimation
 - Rollback procedures and contingency plans
-- Technical design documentation
+- Technical design documentation with `design_` prefix
 
 ### 3. **Auto Execution of the Migration**
 Bob automates the migration process:
@@ -78,7 +65,15 @@ Bob ensures migration quality through:
 - Data integrity validation
 - Functional and integration testing
 
-### 5. **Hypercare**
+### 5. **Optimization**
+Bob optimizes the migrated system:
+- Performance analysis and bottleneck identification
+- Code-level optimizations leveraging platform features
+- Resource and cost optimization
+- Configuration tuning for optimal performance
+- Validation of optimization improvements
+
+### 6. **Hypercare**
 Bob provides ongoing support post-migration:
 - Real-time monitoring and alerting
 - Performance optimization recommendations
@@ -105,25 +100,6 @@ Bob provides ongoing support post-migration:
 - Testing Framework Migration
 - And many more...
 
-## ✅ Implementation Status
-
-**Current Status:** Migration Design Mode is fully functional and ready for use!
-
-**Recent Updates:**
-- ✅ Bug discovered and resolved (2026-05-16)
-- ✅ File reading capability verified and working
-- ✅ All design tools operational
-- ✅ Real-world demo completed successfully
-
-**Documentation:**
-- 📚 **[Design Mode Documentation Hub](docs/design-mode/README.md)** - Complete documentation index
-- 📋 **[Implementation Summary](docs/design-mode/implementation-summary.md)** - Overview and metrics
-- 🐛 **[Bug Report](BUG-REPORT-DESIGN-MODE.md)** - Bug resolution details
-- 🎯 **[Demo Summary](DESIGN-MODE-DEMO-SUMMARY.md)** - Demo validation results
-- 🏗️ **[Sample Architecture Design](../sample-java-migration-test/MIGRATION-ARCHITECTURE-DESIGN.md)** - Real-world example
-
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -133,26 +109,26 @@ Bob provides ongoing support post-migration:
 
 ### Quick Start
 
-1. **Clone this Project:**
+1. **Clone or Download this Project:**
 
    ```bash
    git clone <repository-url>
    cd ibm-bob-migration-framework
    ```
 
-> This project can also be downloaded and unziped instead of cloning
+   > This project can also be downloaded and unzipped instead of cloning
 
 2. **Open in IBM Bob IDE:**
    - Launch IBM Bob IDE
    - Open the project folder
-   - Bob will automatically detect custom modes and skills
+   - Bob will automatically detect custom modes and skills from the `.bob` directory
 
 3. **Start with Orchestration Mode:**
-   - Switch to "Migration Orchestrator Mode"
+   - Switch to "🎯 Migration Orchestrator Mode"
    - Bob will guide you through the migration phases
    - Follow Bob's recommendations and validations
 
-> This project also supports jump to each modes without using the orchestration, usefull for long-going migration session that each of the mode can be continued
+   > This project also supports jumping to each mode without using the orchestration, useful for long-running migration sessions where each mode can be continued independently
 
 4. **Execute Your Migration:**
    - Bob will orchestrate the entire process
