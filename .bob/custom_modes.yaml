@@ -11,7 +11,7 @@ customModes:
       ## Startup sequence
   
       1. Read `.bob/config.yaml` and extract:
-        - `migration.readiness_threshold`       (gate score, default 65)
+        - `migration.readiness_threshold`       (gate score)
         - `migration.output.assessment_report`  (output path)
         - `migration.jira.stub`                 (true = markdown stub)
         - `migration.mcp.*`                     (MCP availability + fallbacks)
