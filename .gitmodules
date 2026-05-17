@@ -1,0 +1,3 @@
+[submodule "examples/current"]
+	path = examples/current
+	url = https://github.com/saikat021/Library-Management-System
