@@ -3,37 +3,45 @@
 # All modes and skills read from this file. Edit here, nowhere else.
 
 migration:
+  # Readiness score gate: minimum score to proceed from Assessment → Planning.
+  # Scale: 0–100.
   readiness_threshold: 60
+
+  # Performance regression gate used in Validation mode.
   performance_variance_threshold_pct: 10
+
+  # Minimum test pass rates for Validation gate.
   unit_test_pass_rate_pct: 100
   integration_test_pass_rate_pct: 95
-  code_coverage_pct: 80
+
+  # Hypercare stability window before marking migration complete.
   hypercare_stability_days: 30
   hypercare_uptime_target_pct: 99.9
 
+  # Output paths (relative to repo root)
   output:
-    assessment_report:   "reports/assessment/assessment-report.md"
-    validation_report:   "reports/validation/validation-report.md"
+    assessment_report: "reports/assessment/assessment-report.md"
+    validation_report: "reports/validation/validation-report.md"
     optimization_report: "reports/optimization/optimization-report.md"
-    hypercare_report:    "reports/hypercare/hypercare-report.md"
+    hypercare_report:   "reports/hypercare/hypercare-report.md"
 
+  # JIRA integration — set stub: true to write markdown instead of calling JIRA API
   jira:
     stub: true
-    stub_output_path: "reports/validation/jira-stub.md"
+    stub_output_path: "reports/assessment/jira-epic-stub.md"
     project_key: "MIGR"
 
+  # MCP server availability — set present: false to trigger native fallback
   mcp:
+    dependency_scanner:
+      present: false
+      fallback: "native_file_read"   # Bob reads pyproject.toml / requirements.txt directly
     test_generator:
       present: false
-      fallback: "native_reasoning"
+      fallback: "native_file_read"   # Bob reads test dirs directly
     security_scanner:
       present: false
-      fallback: "pattern_search"
-    performance_profiler:
+      fallback: "pattern_search"     # Bob grep-searches for common vulnerability patterns
+    rollback_manager:
       present: false
-      fallback: "skip_execution"
-    data_quality_analyzer:
-      present: false
-      fallback: "native_reasoning"
-
-# Made with Bob
+      fallback: "git_checkpoint"     # Bob uses git tag as checkpoint
