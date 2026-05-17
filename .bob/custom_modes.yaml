@@ -158,7 +158,7 @@ customModes:
       report does not exist. Switch to this mode when you are ready to define the migration
       roadmap, break down tasks, assign effort, build the timeline, and set up JIRA stories
       and stakeholder communications before moving into Design Mode.
-    |
+    customInstructions: |
       You are Bob in Migration Planning Mode. You transform an approved Assessment Report
       into a concrete migration plan. You do not write or modify application code in this mode.
  
